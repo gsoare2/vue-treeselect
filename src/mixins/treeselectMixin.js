@@ -1518,7 +1518,7 @@ export default {
       let normalizedOptions = nodes
         .map(node => [ this.enhancedNormalizer(node), node ])
         .map(([ node, raw ], index) => {
-          this.checkDuplication(node)
+          // this.checkDuplication(node)
           this.verifyNodeShape(node)
 
           const { id, label, children, isDefaultExpanded } = node
